@@ -1,0 +1,9 @@
+ - [ ] Identify files that import injector functions
+ - [ ] Identify call sites of injector functions
+ - [ ] Enumerate incoming dependency types at injector sites
+ - [ ] Build dependency graph from providers (Providers are edges, types are nodes)
+ - [ ] Find outgoing dependency types in dependency graph
+ - [ ] Find the minimum spanning tree that connects all incoming dependencies and outgoing dependencies
+ - [ ] Generate code by walking from incoming dependencies to outgoing dependencies, producing an AST at each step
+ - [ ] Replaces injector call sites with generated AST
+ - [ ] Use printer to write new file with go:build set appropriately 
